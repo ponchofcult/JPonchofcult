@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.ariyasumomoka" name="Ariyasu Momoka" version="0.0.1" provider-name="ponchofcult">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+		<import addon="script.module.codequick" version="1.0"/>
+		<import addon="script.module.future" version="0.17.1"/>
+		<import addon="script.module.resolveurl" version="5.1.00"/>
+
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>image video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Shows the content of Ariyasu Momoka Website =)</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website>https://github.com/ponchofcult</website>
+        <email>ponchofcult@outlook.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+    <addon id="repository.jponchofcult" name="JPonchofcult Repository" version="1.0.0" provider-name="Ponchofcult">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="JPonchofcult Repository">
+            <info compressed="false">https://raw.githubusercontent.com/ponchofcult/JPonchofcult/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ponchofcult/JPonchofcult/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ponchofcult/JPonchofcult/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>JPop and JRock Addon Repository</summary>
+            <description>Official Ponchofcult Repository with Japanse Pop and Japanese Rock Content Addons</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
